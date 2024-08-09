@@ -17,10 +17,27 @@
   --heading2: 800 1.6rem/ 1.4 var(--font-family);
   --heading3: 800 1.4rem/ 1.4 var(--font-family);
   --span: 600 1.4rem/ 1.45 var(--font-family);
-  --paragraph: 400 1.4rem/ 1.6 var(--font-family);
+  --text: 400 1.6rem/1.6 var(--font-family);
+  --text-sm: 400 1.4rem/ 1.6 var(--font-family);
 }
 
 body {
+  font: var(--text);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /*inherit - herdando a cor do body*/
+}
+
+a:hover {
+  color: var(--brand-color-light);
+}
+
+h1,
+h2,
+h3 {
+  font: inherit; /*herdando as conf. de font do body*/
 }
