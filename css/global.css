@@ -41,3 +41,18 @@ h2,
 h3 {
   font: inherit; /*herdando as conf. de font do body*/
 }
+
+.container {
+  max-width: 128rem;
+  padding-inline: 3.2rem;
+  margin-inline: auto;
+}
+
+/* Utility-first */
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
